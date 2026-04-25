@@ -1,4 +1,4 @@
-MAX_DISCOUNT_PERCENT = 50
+MAX_DISCOUNT_PERCENT = 30
 
 
 def calculate_discount(price, discount_percent):
@@ -8,3 +8,7 @@ def calculate_discount(price, discount_percent):
 
 def calculate_final_price(price, discount_percent):
     return price - calculate_discount(price, discount_percent)
+
+
+def calculate_membership_discount(price):
+    return price * 0.05
